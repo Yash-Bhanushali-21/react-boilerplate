@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router} from "react-router-dom";
+import RouterConfig from "./navigation/RouterConfig";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <RouterConfig />
+    </Router>
   );
 }
+
+/*similarly, we can create routes for other components as well.
+Note, a single Home Page here is treated as a component as well.
+Component Folder focuses explicitly on re-usable components.
+*/
 
 export default App;
