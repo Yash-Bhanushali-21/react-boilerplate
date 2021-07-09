@@ -7,6 +7,7 @@ function App() {
     <Router>
       <RouterConfig />
     </Router>
+
   );
 }
 
